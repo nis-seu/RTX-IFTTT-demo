@@ -1,0 +1,3 @@
+Device,MAC,Operation,Protocol,length1,length2,length3,length4
+Yeelight_LED_Bulb_1,04:cf:8c:b4:c9:5b,APP switch on/off CC,TCP,1211,890,0,0
+Yeelight_LED_Bulb_1,04:cf:8c:b4:c9:5b,APP/timer/ifttt on/off SC,TCP,1210,891,0,0
