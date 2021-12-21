@@ -16,7 +16,7 @@
 #### 2.4 set your webhook user_key
 #### 2.5 set your operation_event_name in which key is made up of wemo device and operation , value is the eventName. 
 ### 3.run the real_time.py, and then turn on the Wemo Smart Plug. After about 6 seconds, the Yeelight LED Bulb 1 will be turned on.
-## Auther
+## Author
 ### 1. kai dong. E-mail: dk@seu.edu.cn
 ### 2. Yakun Zhang. E-mail: zyk@seu.edu.cn
 ### 3. Yuchen Zhao. E-mail: zyc@seu.edu.cn
