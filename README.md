@@ -1,7 +1,8 @@
 # Code for Real-Time Execution of Trigger-Action Connection for Home Internet-of-Things
-##  Devices
+##  Devices and Environment
 ### Belkin Wemo Smart Plug
 ### Yeelight LED Bulb 1
+### Python 3
 ## Usage of IFTTT
 ### 1. Create an Applet
 ### 2. Add a Trigger, choose "WeMo Smart Plug" service, choose "Switched on" trigger and then choose your Wemo Smart Plug.
