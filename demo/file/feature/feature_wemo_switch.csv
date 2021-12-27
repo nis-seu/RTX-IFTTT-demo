@@ -1,5 +1,4 @@
 Device,MAC,Operation,Protocol,length1,length2,length3,length4
+wemo_switch,14:91:82:ca:1d:a1,manual/timer on/off,TCP,3220,331,0,0
 wemo_switch,14:91:82:ca:1d:a1,APP switch on/off CC,TCP,3511,330,0,0
 wemo_switch,14:91:82:ca:1d:a1,APP/ifttt switch on/off SC,TCP,7740,331,0,0
-
-
