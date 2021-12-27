@@ -1,16 +1,16 @@
 # A  guide to run the demo
 This article aims to help readers implement the Webhook mechanism of RTX-IFTTT with the code we provide. The essence of this demo is to identify the behavior of devices by capturing the traffic characteristics of IoT devices, and then send a notification for IFTTT in real-time. In IFTTT, the timely response of Webhook is used to shorten the delay.
 ##  Devices (型号)
-Belkin Wemo Smart Plug Model:F7C027
-Yeelight Smart LED Bulb (Color) YLDP06YL LED灯泡 （彩光版）E27
-(Optional) Brume(GL-MV1000)/Notebook
+Belkin Wemo Smart Plug Model:F7C027.  
+Yeelight Smart LED Bulb (Color) YLDP06YL LED灯泡 （彩光版）E27.  
+(Optional) Brume(GL-MV1000)/Notebook.  
 ## Environment Setting
-###Interpreter
+### Interpreter
 Python 3.7
-###Dependencies
-scapy
-datetime
-requests
+### Dependencies
+scapy  
+datetime  
+requests  
 ## Create an Applet in IFTTT
 1. Go to the IFTTT website and then click the "Create" button.
 2. Click the "Add" button to add a Trigger. After that, choose the "WeMo Smart Plug" service and then choose "Switched on" trigger.  After binding your Wemo Account with IFTTT, choose your Wemo Device.
