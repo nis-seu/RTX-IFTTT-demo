@@ -4,13 +4,25 @@ This article aims to help readers implement the Webhook mechanism of RTX-IFTTT w
 Belkin Wemo Smart Plug Model:F7C027.  
 Yeelight Smart LED Bulb (Color) YLDP06YL LED灯泡 （彩光版）E27.  
 (Optional) Brume(GL-MV1000)/Notebook.  
-## Environment Setting
-### Interpreter
-Python 3.7
-### Dependencies
-scapy  
-datetime  
-requests  
+## Development Environment
++ Python 3.7
+    - scapy  
+    - datetime  
+    - requests  
+
+## File Structure
+```
+.  
+|--file--|--feature--|--Device_MAC.csv                   # store device and MAC
+|--file--|--feature--|--feature_wemo_switch.csv          # store the fingerprint of Wemo Smart Plug
+|--file--|--feature--|--feature_yeelight_led_bulb_1.csv  # store the fingerprint of Yeelight LED Bulb
+|--deal_csv.py                                           # the helper for other python file
+|--final_parse_packet.py                                 # the code of parsing the route traffic
+|--real_time.py                                          # the main function to run 
+|--test_recognition.py                                   # the code of recognize the state changes of devices
+```
+
+
 ## Create an Applet in IFTTT
 1. Go to the IFTTT website and then click the "Create" button.
 2. Click the "Add" button to add a Trigger. After that, choose the "WeMo Smart Plug" service and then choose "Switched on" trigger.  After binding your Wemo Account with IFTTT, choose your Wemo Device.
@@ -18,9 +30,9 @@ requests
 ## Test the Applet
 4. In Wemo App, switch on your Wemo  Smart Plug. After about 60 seconds, the Yeelight LED Bulb will be turned on.
 
-## Create a new Webhooks
+## Create a new Webhook
  Create an  Applet like "Create an Applet in IFTTT", and then choose Webhooks as trigger service and choose Yeelight as Action service. The "event_name" is what you set in the Webhooks service.
-## create a new "Trigger-Webhook" Applet
+## Create a new "Trigger-Webhook" Applet
  Modify the Code:
   1. Insert your devices's MAC address in the Device_MAC.csv. You can find the mac of device on the label of device.
   2. Insert your devices' traffic feature in the feature_{device}.csv. Compared with PingPong, the same type of device may have different characteristics. A sample way to achieve the traffic feature is analyzing the packets using Wireshark, and then manually writing to feature_{device}.csv
@@ -30,8 +42,9 @@ requests
   6. If you use route(like, Brume(GL-MV1000)) to run the code, the file path of this project should be set to the Absolute Path (AP).
 ## Run the new Applet in real time
  Run the real_time.py, and then turn on the Wemo Smart Plug. After about 6 seconds, the Yeelight LED Bulb will be turned on.
-## Author
- 1. Kai Dong. E-mail: dk@seu.edu.cn
- 2. Yakun Zhang. E-mail: zyk@seu.edu.cn
- 3. Yuchen Zhao. E-mail: zyc@seu.edu.cn
- 4. Daoming Li. E-mail: lidaoming0219@seu.edu.cn
+## Contacts 
+ 1. Daoming Li. E-mail: lidaoming0219@seu.edu.cn
+ 2. Yuchen Zhao. E-mail: zyc@seu.edu.cn  
+ 3. Kai Dong. E-mail: dk@seu.edu.cn
+
+

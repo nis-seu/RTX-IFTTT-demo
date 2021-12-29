@@ -1,5 +1,5 @@
 
-
+# read the file
 def read(csv_file):
     data = []
     with open(csv_file, "r", encoding='utf-8') as file:
@@ -10,6 +10,7 @@ def read(csv_file):
             data.append(line)
     return data
 
+# read the file
 def read_csv(csv_file):
     data = []
     with open(csv_file, "r", encoding='utf-8') as file:
@@ -22,11 +23,10 @@ def read_csv(csv_file):
 
 
 
-
+# save data to file
 def to_csv(file_path, data):
     with open(file_path, "w", encoding='utf-8') as file :
         file.write("")
-
     with open(file_path, "a", encoding='utf-8') as file:
         for item in data:
             file.write(str(item[0]))
