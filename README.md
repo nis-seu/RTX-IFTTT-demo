@@ -2,7 +2,7 @@
 This article aims to help readers implement the Webhook mechanism of RTX-IFTTT with the code we provide. The essence of this demo is to identify the behavior of devices by capturing the traffic characteristics of IoT devices, and then send a notification for IFTTT in real-time. In IFTTT, the timely response of Webhook is used to shorten the delay.
 ##  Devices 
 Belkin Wemo Smart Plug Model:F7C027.  
-Yeelight Smart LED Bulb (Color) YLDP06YL LED灯泡 （彩光版）E27.  
+Yeelight Smart LED Bulb (Color) YLDP06YL LED E27.  
 (Optional) Brume(GL-MV1000)/Notebook.  
 ## Development Environment
 + Python 3.7
